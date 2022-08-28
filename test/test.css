@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.border {
+    border: 5px solid red;
+}
+.container {
+    margin: 5rem auto;
+    max-width: 1000px;
+    height: 40rem;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.flex > div:nth-of-type(1) {
+    border: 1px solid green ;
+    display: flex;
+    align-items: center;
+}
+
+.flex > div:nth-of-type(2) {
+    border: 1px solid blue ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}

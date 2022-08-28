@@ -1,0 +1,153 @@
+body {
+    background-color: var(--body-background);
+    min-height: 100vh;
+}
+/**** contact info ****/
+.contactInfo {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+/* main title */
+.contactInfo .mainTitle {
+    margin-bottom: 2.2rem;
+}
+/*** contact us Grid ***/
+.contactUs {
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    gap: 3rem;
+}
+/** jb info **/
+.jbInfo {
+    background-color: var(--white);
+    padding: 2rem;
+    border: var(--border-primary);
+    border-radius: 1rem;
+}
+.jbInfo h4 {
+    margin-bottom: 1rem;
+}
+.method {
+    padding: 2rem 0;
+    gap: 2rem;
+}
+.method i {
+font-size: 1.5rem;
+}
+.method:last-of-type {
+    margin-bottom: 3rem;
+}
+.trustPilot {
+    background-color: var(--dark-blue);
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 0;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.trustPilot img {
+    height: 1.9rem;
+}
+/** send Msg **/
+.sendMsg {
+    background-color: var(--white);
+    padding: 2rem;
+    border: var(--border-primary);
+    border-radius: 1rem;
+}
+.sendMsg h4 {
+    margin-bottom: 3rem;
+}
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+input:focus {
+    outline: none;
+    border: 1px solid var(--dark-blue);
+}
+form input {
+    width: 100%;
+    padding-left: 2rem;
+    height: 4.8rem;
+    border-radius: 1rem;
+    border: 1px solid var(--light-grey);
+    margin-bottom: 2rem;
+}
+textarea {
+    width: 100%;
+    border: 1px solid var(--light-grey);
+    padding: 2rem 2rem;
+    border-radius: 1rem;
+    resize: none;
+    height: 20rem;
+    font-family: sans-serif;
+    margin-bottom: 2rem;
+}
+textarea:focus {
+    outline: none;
+    border: 1px solid var(--dark-blue);
+}
+button {
+    width: 11.6rem;
+    height: 4rem;
+    background-color: var(--dark-blue);
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+
+@media  screen and (max-width:1280px) {
+    .contactUs {
+        grid-template-columns: 1fr;
+    }
+    .trustPilot {
+        max-width: 30rem;
+    }
+}
+
+/* font-size adjustments */
+@media screen and (max-width: 444px) {
+    /* Typography */
+    .h-xl {
+        font-weight: var(--bold);
+        font-size: 2.4rem;
+    }
+    .h-l {
+        font-weight: var(--regular);
+        font-size: 2.4rem;
+    }
+    .h-m {
+        font-weight: var(--bold);
+        font-size: 1.8rem;
+    } 
+    .h-s {
+        font-weight: var(--regular);
+        font-size: 1.8rem;
+    }
+    .h-xs {
+        font-weight: var(--bold);
+        font-size: 1.5rem;
+    }
+    .b-xl {
+        font-weight: var(--bold);
+        font-size: 1.2rem;
+    }
+    .b-l {
+        font-weight: var(--regular);
+        font-size: 1.5rem;
+    }  
+    .b-m {
+        font-weight: var(--bold);
+        font-size: 1.125rem;
+    }
+    .b-s {
+         font-weight: var(--regular);
+        font-size: 1.125rem;
+    }
+    .b-xs {
+        font-weight: var(--regular);
+        font-size: 1.05rem;
+    }
+ }

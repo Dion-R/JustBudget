@@ -1,0 +1,87 @@
+body {
+    background-color: #F7F9FC;
+}
+main {
+    margin-left: 26.4rem;
+}
+/**** creditor info section ****/
+.creditorInfo {
+    margin-top: 9rem;
+}
+/* back button */
+.back {
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.back i {
+    font-size: 2.4rem;
+}
+/* main title */
+.creditorInfo .mainTitle {
+    margin-bottom: 2rem;
+}
+/*** debt card ***/
+.debtCard {
+    padding: 2rem 2rem 3rem 2rem;
+    background-color: var(--dark-blue);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    row-gap: 2rem;
+    margin-bottom: 3rem;
+}
+.progress {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: var(--turqoise-opaque);
+}
+.progress > div {
+    height: 0.5rem;
+    width: 8%;
+    background-color: var(--green);
+}
+.debtCard p {
+    margin-bottom: 1rem;
+}
+/*** Re payment Info ***/
+.repaymentInfo {
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+    gap: 3rem;
+}
+/** payment History **/
+.paymentHistory {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: var(--border-primary);
+}
+.payment {
+    display: grid;
+    grid-template-columns: 1.5fr 1.4fr 0.9fr 0.5fr;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--light-grey);
+}
+.payment p:last-of-type {
+    text-align: right;
+}
+/** Payment Status **/ 
+.paymentStatus {
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    height: 12rem;
+    border: var(--border-primary);
+}
+.paymentStatus h4 {
+    margin-bottom: 2rem;
+}
+.status {
+    gap: 2rem;
+}
+.status i {
+    font-size: 2rem;
+}

@@ -1,0 +1,176 @@
+body {
+    background-color: var(--body-background);
+}
+/**** Schedule ****/
+.schedule {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+/* Main Title */
+.mainTitle p {
+    margin-bottom: 2.2rem;
+}
+
+/*** Payment Summary ***/
+.paymentSummary {
+    background-color: var(--turqoise);
+    border-radius: 1rem;
+    padding: 3rem 2rem 3rem 2rem;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr 1fr;
+    margin-bottom: 3rem;
+}
+.paymentSummary p {
+    margin-bottom: 1rem;
+}
+/*** All Payments ***/
+.allPayments {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 6rem;
+}
+.allPayments .title {
+    padding: 2rem 2rem 0.5rem 2rem;
+    border-bottom: var(--border-primary);
+}
+.allPayments .title h3 {
+    margin-bottom: 2rem;
+}
+.creditor {
+    display: grid;
+    align-items: center;
+    padding: 0 2rem;
+    height: 6rem;
+}
+.creditor:hover {
+    background-color: var(--dark-blue-opaque);
+}
+.payments {
+    max-height: 60rem;
+    overflow: auto;
+}
+/** Future Direct Debits **/
+.scheduledPayments {
+    background-color: var(--white);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.scheduledPayments .creditor {
+    grid-template-columns: repeat(3, 1fr);
+}
+.scheduledPayments .header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+/** Previous Direct Debits **/
+.previousPayments {
+    background-color: var(--white);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.previousPayments .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.7fr;
+}
+.previousPayments .creditor {
+    grid-template-columns: 1fr 1fr 1fr 0.7fr;
+}
+@media screen and (max-width: 1350px) {
+    .allPayments {
+        grid-template-columns: 1fr;
+    }
+    .paymentSummary {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+/* font weight changes */
+@media screen and (max-width: 660px) {
+    /* Typography */
+    .h-xl {
+        font-weight: var(--bold);
+        font-size: 2.4rem;
+    }
+    .h-l {
+        font-weight: var(--regular);
+        font-size: 2.4rem;
+    }
+    .h-m {
+        font-weight: var(--bold);
+        font-size: 1.8rem;
+    } 
+    .h-s {
+        font-weight: var(--regular);
+        font-size: 1.8rem;
+    }
+    .h-xs {
+        font-weight: var(--bold);
+        font-size: 1.5rem;
+    }
+    .b-xl {
+        font-weight: var(--bold);
+        font-size: 1.2rem;
+    }
+    .b-l {
+        font-weight: var(--regular);
+        font-size: 1.5rem;
+    }  
+    .b-m {
+        font-weight: var(--bold);
+        font-size: 1.125rem;
+    }
+    .b-s {
+         font-weight: var(--regular);
+        font-size: 1.125rem;
+    }
+    .b-xs {
+        font-weight: var(--regular);
+        font-size: 1.05rem;
+    }
+ }
+ @media screen and (max-width: 480px) {
+    /* Typography */
+    .h-xl {
+        font-weight: var(--bold);
+        font-size: 1.6rem;
+    }
+    .h-l {
+        font-weight: var(--regular);
+        font-size: 1.6rem;
+    }
+    .h-m {
+        font-weight: var(--bold);
+        font-size: 1.8rem;
+    } 
+    .h-s {
+        font-weight: var(--regular);
+        font-size: 1.2rem;
+    }
+    .h-xs {
+        font-weight: var(--bold);
+        font-size: 1.2rem;
+    }
+    .b-xl {
+        font-weight: var(--bold);
+        font-size: 1rem;
+    }
+    .b-l {
+        font-weight: var(--regular);
+        font-size: 1.25rem;
+    }  
+    .b-m {
+        font-weight: var(--bold);
+        font-size: 0.75rem;
+    }
+    .b-s {
+         font-weight: var(--regular);
+        font-size: 0.75rem;
+    }
+    .b-xs {
+        font-weight: var(--regular);
+        font-size: 0.7rem;
+    }
+    .mainTitle h1{
+        font-size: 2.4rem;
+    }
+ }

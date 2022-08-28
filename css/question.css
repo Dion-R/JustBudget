@@ -1,0 +1,116 @@
+body {
+    background-color: #F7F9FC;
+}
+main {
+    margin-left: 26.4rem;
+}
+/**** Question ****/
+.question {
+    margin-top: 4em;
+    margin-bottom: 4rem;
+}
+/* Back */
+.back {
+    gap: 1.5rem;
+    margin-bottom: 2.2rem;
+}
+/* Answer */
+.answer {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: var(--border-primary);
+    margin-bottom: 2rem;
+}
+.answer h1 {
+    margin-bottom: 1.5rem;
+}
+
+/* Font-size changes */
+
+@media screen and (max-width: 850px) {
+    /* Typography */
+    .h-xl {
+        font-weight: var(--bold);
+        font-size: 2.4rem;
+    }
+    .h-l {
+        font-weight: var(--regular);
+        font-size: 2.4rem;
+    }
+    .h-m {
+        font-weight: var(--bold);
+        font-size: 1.8rem;
+    } 
+    .h-s {
+        font-weight: var(--regular);
+        font-size: 1.8rem;
+    }
+    .h-xs {
+        font-weight: var(--bold);
+        font-size: 1.5rem;
+    }
+    .b-xl {
+        font-weight: var(--bold);
+        font-size: 1.2rem;
+    }
+    .b-l {
+        font-weight: var(--regular);
+        font-size: 1.2rem;
+    }  
+    .b-m {
+        font-weight: var(--bold);
+        font-size: 1.125rem;
+    }
+    .b-s {
+         font-weight: var(--regular);
+        font-size: 1.125rem;
+    }
+    .b-xs {
+        font-weight: var(--regular);
+        font-size: 1.05rem;
+    }
+ }
+ @media screen and (max-width: 480px) {
+    /* Typography */
+    .h-xl {
+        font-weight: var(--bold);
+        font-size: 1.6rem;
+    }
+    .h-l {
+        font-weight: var(--regular);
+        font-size: 1.6rem;
+    }
+    .h-m {
+        font-weight: var(--bold);
+        font-size: 1.8rem;
+    } 
+    .h-s {
+        font-weight: var(--regular);
+        font-size: 1.2rem;
+    }
+    .h-xs {
+        font-weight: var(--bold);
+        font-size: 1.2rem;
+    }
+    .b-xl {
+        font-weight: var(--bold);
+        font-size: 1rem;
+    }
+    .b-l {
+        font-weight: var(--regular);
+        font-size: 1rem;
+    }  
+    .b-m {
+        font-weight: var(--bold);
+        font-size: 0.75rem;
+    }
+    .b-s {
+         font-weight: var(--regular);
+        font-size: 0.75rem;
+    }
+    .b-xs {
+        font-weight: var(--regular);
+        font-size: 0.7rem;
+    }
+ }

@@ -1,0 +1,252 @@
+
+:root {
+    --orange-opaque: rgb(255, 165, 0, 0.2);
+    --green-opaque: rgb(0, 255, 0, 0.2);
+    --red-opaque: rgb(255,0,0,0.2);
+    --turqoise: #00D1DB;
+    --black: #000000;
+    --green: #D3F531;
+    --white: #FFFFFF;
+    --dark-blue: #09365B;
+    --dark-grey: #54595F;
+    --light-grey: rgba(204, 204, 204, 0.3);
+    --pink: #FF9595;
+    --dark-blue-opaque: rgba(9, 54, 91, 0.05);
+    --turqoise-opaque: rgba(0,209, 219, 0.5);
+    --body-background: #F7F9FC;
+    --border-primary: 1px solid rgba(9, 54, 91, 0.1);
+    --primary-font: 'Manrope', sans-serif;
+    --gradient: linear-gradient(0deg, rgba(9, 54, 91, 0.6), rgba(9, 54, 91, 0.6), rgba(9, 54, 91, 0.6));
+    --regular: 400;
+    --bold: 600:
+}
+/* REM re-sizing */
+html {
+    font-size: 10px;
+}
+/* Universal Rules */
+button {
+    border: none;
+    background-color: none;
+}
+body {
+    font-family: sans-serif;
+    color: black;
+    font-size: 1.6rem;
+    min-height: 100vh;
+}
+main {
+    margin-left: 26.4rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+/* positioning for main content */
+.container {
+    margin: 0 4rem;
+    max-width: 105rem;
+}
+/* quickhand references */
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+.inlineB {
+    display: inline-block;
+}
+.inlineF {
+    display: inline-flex;
+}
+.alignC {
+    align-items: center;
+}
+.none {
+    display: none;
+}
+.flex {
+    display: flex;
+}
+.block {
+    display: block;
+}
+/* typography */
+.h-xl {
+    font-weight: var(--bold);
+    font-size: 3.2rem;
+}
+.h-l {
+    font-weight: var(--regular);
+    font-size: 3.2rem;
+}
+.h-m {
+    font-weight: var(--bold);
+    font-size: 2.4rem;
+} 
+.h-s {
+    font-weight: var(--regular);
+    font-size: 2.4rem;
+}
+.h-xs {
+    font-weight: var(--bold);
+    font-size: 2rem;
+}
+.b-xl {
+    font-weight: var(--bold);
+    font-size: 1.6rem;
+}
+.b-l {
+    font-weight: var(--regular);
+    font-size: 1.6rem;
+}  
+.b-m {
+    font-weight: var(--bold);
+    font-size: 1.5rem;
+}
+.b-s {
+     font-weight: var(--regular);
+    font-size: 1.5rem;
+}
+.b-xs {
+    font-weight: var(--regular);
+    font-size: 1.4rem;
+}
+.grey {
+    color: var(--dark-grey);
+}
+.blue {
+    color:var(--dark-blue)
+}
+.white {
+    color: var(--white);
+}
+.lightGrey {
+    color: var(--light-grey);
+}
+.green {
+    color: var(--green);
+}
+.turqoise {
+    color: var(--turqoise);
+}
+.pink {
+    color: var(--pink);
+}
+
+/* side nav */
+aside {
+    width: 26.4rem;
+    height: 100%;
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+header img {
+    width: 4rem;
+}
+nav i {
+    width: 3rem;
+    font-size: 2rem;
+}
+nav a {
+    gap: 1.7rem;
+    padding: 1.5rem 0 1.5rem 2rem;
+    width: 100%;
+}
+nav a:hover {
+    background-color: var(--dark-blue);
+    color: white;
+}
+.cross {
+    padding-right: 2rem;
+    padding-top: 1rem;
+    text-align: right;
+    cursor: pointer;
+    display: none;
+    font-size: 2rem;
+    color: #FF9595;
+}
+/* floating notifiaction center to be discussed*/
+.notification {
+    padding-top: 3rem;
+}
+.notification .container {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.circleImg {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 1px solid var(--dark-blue);
+    overflow: hidden;
+    background-image: url(/img/heroImage.png);
+    background-size: cover;
+}
+.profileNav {
+    gap: 2rem;
+}
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.profileNav a {
+    color: var(--dark-blue);
+}
+@media screen and (max-width:1000px) {
+    aside {
+        display: none;
+    }
+    .container {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .notification {
+        width: 100%;
+        background: var(--dark-blue);
+        position: static;
+        color: white;
+        gap: 0;
+        justify-content: space-between;
+        padding-top: 0;
+    }
+    .notification > .container {
+        justify-content: space-between;
+        padding: 2rem 0;
+    }
+    .hamburger {
+        display: block;
+    }
+    .profileNav a {
+        color: var(--white);
+    }
+    .hamburger {
+        display: block;
+    }
+    .cross {
+        display: block;
+    }
+    .heading {
+        padding: 0 2rem 2rem 2rem;
+    }
+    main {
+        margin-left: 0;
+    }
+}

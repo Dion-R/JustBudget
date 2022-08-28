@@ -1,0 +1,166 @@
+/* universal classes and elements */
+body {
+    background-color: #F7F9FC;
+}
+/**** debts  ****/
+.debts {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+/* MainTitle */
+.debts .mainTitle {
+    margin-bottom: 2.2rem;
+}
+/*** Debt Card ***/
+.debtCard {
+    padding: 2rem;
+    background-color: var(--dark-blue);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    row-gap: 2rem;
+    margin-bottom: 3rem;
+}
+.progress {
+    grid-column: 1/4;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: var(--turqoise-opaque);
+}
+.progress > div {
+    height: 0.5rem;
+    width: 8%;
+    background-color: var(--green);
+}
+.debtCard p {
+    margin-bottom: 1rem;
+}
+/* Status */
+.status {
+    background-color: var(--white);
+    border: var(--border-primary);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+.status .title {
+    margin-bottom: 1rem;
+}
+.status .title h3 {
+    margin-bottom: 1.5rem;
+}
+.status .header {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+}
+.creditor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 6rem;
+    align-items: center;
+    gap: 1rem;
+}
+.currentStatus{
+    gap: 1.5rem;
+}
+.currentStatus i {
+    font-size: 2rem;
+}
+.head {
+    display: none;
+}
+@media screen and (max-width:1180px) {
+    .creditor {
+        grid-template-columns: 1fr 1.1fr 0.9fr 0.8fr;
+    }
+    .status .header {
+        grid-template-columns: 1fr 1.1fr 0.9fr 0.8fr;
+    }
+
+}
+@media screen and (max-width:800px) {
+    .creditor {
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 3.5rem;
+        border: var(--border-primary);
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+    .status .header {
+        display: none;
+    }
+    .name {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        color: var(--dark-grey);
+        font-weight: var(--bold);
+        text-align: center;
+        border-bottom: var(--border-primary);
+        padding-bottom: 1rem;
+    }
+    .head {
+        grid-column: 1/2;
+        grid-row: 2/5;
+        display: block;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+    .creditor i {
+        font-size: 1.5rem;
+    }
+    .currentStatus{
+        gap: 1rem;
+    }
+}
+@media  screen and (max-width:580px) {
+    .debtCard {
+        grid-template-columns: 0.9fr 1fr 1fr;
+    }
+}
+/* font weight changes */
+
+@media screen and (max-width: 580px) {
+    /* Typography */
+    .h-xl {
+        font-weight: var(--bold);
+        font-size: 2.4rem;
+    }
+    .h-l {
+        font-weight: var(--regular);
+        font-size: 2.4rem;
+    }
+    .h-m {
+        font-weight: var(--bold);
+        font-size: 2.4rem;
+    } 
+    .h-s {
+        font-weight: var(--regular);
+        font-size: 2.4rem;
+    }
+    .h-xs {
+        font-weight: var(--bold);
+        font-size: 2rem;
+    }
+    .b-xl {
+        font-weight: var(--bold);
+        font-size: 1.6rem;
+    }
+    .b-l {
+        font-weight: var(--regular);
+        font-size: 1.4rem;
+    }  
+    .b-m {
+        font-weight: var(--bold);
+        font-size: 1.5rem;
+    }
+    .b-s {
+         font-weight: var(--regular);
+        font-size: 1.5rem;
+    }
+    .b-xs {
+        font-weight: var(--regular);
+        font-size: 1.4rem;
+    }
+}

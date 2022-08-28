@@ -1,0 +1,49 @@
+body {
+    background-color: var(--body-background);
+    min-height: 100vh;
+}
+/**** Profile ****/
+.profile {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+/* Main title */
+.profile .mainTitle {
+    margin-bottom: 2.2rem;
+}
+/* profile Information */
+.profileInformation {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: var(--border-primary);
+    margin-bottom: 3rem;
+}
+.profileInformation h4 {
+    margin-bottom: 1rem;
+}
+.info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+}
+.info i {
+    font-size: 2rem;
+}
+/* password */
+.password {
+    background-color: var(--white);
+    padding: 2rem 2rem 3.8rem 2rem;
+    border-radius: 1rem;
+    border: var(--border-primary);
+}
+.password h4 {
+    margin-bottom: 1rem;
+}
+.password .info {
+    margin-bottom: 1rem;
+}
+
+/* font-size adjustments */
+

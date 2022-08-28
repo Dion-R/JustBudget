@@ -1,0 +1,125 @@
+body {
+    background-color: var(--body-background);
+    min-height: 100vh;
+}
+/**** Questions ****/
+.questions {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+/* main title */
+.mainTitle p {
+    margin-bottom: 2.2rem;
+}
+/*** faqs ***/
+.faqs {
+    display: grid;
+    grid-template-columns: 0.55fr 0.45fr;
+    gap: 3rem;
+}
+.question {
+    display: grid;
+    grid-template-columns: 0.9fr 0.1fr;
+    align-items: center;
+    height: 6rem;
+    padding: 0 2rem;
+}
+.question:hover {
+    background-color: var(--dark-blue-opaque);
+}
+.question i {
+    text-align: end;
+    font-size: 1.5rem;
+}
+/** all faqs **/
+.allFaqs {
+    background-color: var(--white);
+    border-radius: 1rem;
+    border: var(--border-primary);
+}
+.allFaqs .title {
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+/** top Faqs **/
+.topFaqs .title {
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.topFaqs {
+    background-color: var(--white);
+    border-radius: 1rem;
+    border: var(--border-primary);
+}
+
+@media screen and (max-width: 1280px ) {
+    .faqs {
+        grid-template-columns: 1fr;
+        max-width: 70rem;
+    }
+    .allFaqs {
+        padding-bottom: 1.5rem;
+    }
+    .topFaqs {
+        padding-bottom: 1.5rem;
+    }
+}
+@media screen and (max-width: 500px ) {
+    .faqs {
+        max-width: 50rem;
+    }
+}
+@media screen and (max-width: 430px) {
+   .question i {
+    font-size: 1.3rem;
+   }
+   .question {
+    height: 4rem;
+   }
+}
+
+/* font weight changes */
+
+@media screen and (max-width: 430px) {
+    /* Typography */
+    .h-xl {
+        font-weight: var(--bold);
+        font-size: 2.4rem;
+    }
+    .h-l {
+        font-weight: var(--regular);
+        font-size: 2.4rem;
+    }
+    .h-m {
+        font-weight: var(--bold);
+        font-size: 1.8rem;
+    } 
+    .h-s {
+        font-weight: var(--regular);
+        font-size: 1.8rem;
+    }
+    .h-xs {
+        font-weight: var(--bold);
+        font-size: 1.5rem;
+    }
+    .b-xl {
+        font-weight: var(--bold);
+        font-size: 1.2rem;
+    }
+    .b-l {
+        font-weight: var(--regular);
+        font-size: 1.3rem;
+    }  
+    .b-m {
+        font-weight: var(--bold);
+        font-size: 1.125rem;
+    }
+    .b-s {
+         font-weight: var(--regular);
+        font-size: 1.125rem;
+    }
+    .b-xs {
+        font-weight: var(--regular);
+        font-size: 1.05rem;
+    }
+ }

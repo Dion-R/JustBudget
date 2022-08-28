@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c77f7777e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/root.css" />
+    <link rel="stylesheet" href="/css/debts.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <aside>
+      <header>
+        <a href="/index.html" class="heading">
+          <img src="/img/jbLogo.png" alt="jb logo" />
+          <h1 class="h-m blue">Just Budget</h1>
+        </a>
+      </header>
+      <nav>
+        <ul>
+          <li>
+            <a href="/index.html" class="inlineF blue alignC">
+              <i class="fa-solid fa-house"></i>
+              <span class="h-xs">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/debts/debts.html" class="inlineF blue alignC">
+              <i class="fa-solid fa-chart-column"></i>
+              <p class="h-xs">Debts</p>
+            </a>
+          </li>
+          <li>
+            <a href="/html/directDebit.html" class="inlineF blue alignC">
+              <i class="fa-solid fa-money-bill-transfer"></i>
+              <p class="h-xs">Direct Debit</p>
+            </a>
+          </li>
+          <li>
+            <a href="/html/faqs/faqs.html" class="inlineF blue alignC">
+              <i class="fa-solid fa-calendar"></i>
+              <p class="h-xs">FAQ's</p>
+            </a>
+          </li>
+          <li>
+            <a href="/html/contact.html" class="inlineF blue alignC">
+              <i class="fa-solid fa-phone"></i>
+              <p class="h-xs">Contact</p>
+            </a>
+          </li>
+          <li>
+            <a href="/html/profile/profile.html" class="inlineF blue alignC">
+              <i class="fa-solid fa-user"></i>
+              <p class="h-xs">Profile</p>
+            </a>
+          </li>
+          <li>
+            <a href="/html/login.html" class="inlineF blue alignC">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <p class="h-xs">Logout</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <section class="notification b-l blue">
+        <div class="container">
+          <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="flex alignC profileNav">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <a href="">Help and Feedback</a>
+            <i class="fa-solid fa-bell"></i>
+          </div>
+        </div>
+      </section>
+      <section class="debts">
+        <div class="container">
+          <div class="mainTitle">
+            <h1 class="h-l">Debts</h1>
+            <p class="grey b-l date">
+              Here's your debt summary and information
+            </p>
+          </div>
+          <div class="debtCard white">
+            <div class="initialDebt">
+              <p class="b-l">Initial Debt</p>
+              <h1 class="h-xl green">$32,856</h1>
+            </div>
+            <div class="AmountPaid center">
+              <p class="b-l">Amount Paid</p>
+              <h1 class="h-xl">$3,600</h1>
+            </div>
+            <div class="remainingDebt right">
+              <p class="b-l">Remaining Debt</p>
+              <h1 class="h-xl">$29,256</h1>
+            </div>
+            <div class="progress">
+              <div></div>
+            </div>
+          </div>
+          <div class="status">
+            <div class="title">
+              <h3 class="h-m blue">Debt Status</h3>
+            </div>
+            <div class="header">
+              <p class="b-xl grey">Name</p>
+              <p class="b-xl grey">Status</p>
+              <p class="b-xl grey">Original Balance</p>
+              <p class="b-xl grey">Current Balance</p>
+            </div>
+            <div class="creditor">
+              <div class="head">
+                <p class="b-xl grey">Status</p>
+                <p class="b-xl grey">Original Balance</p>
+                <p class="b-xl grey">Current Balance</p>
+              </div>
+              <p class="b-xl name">Creditor Name</p>
+              <div class="inlineF alignC currentStatus">
+                <i class="fa-solid fa-square-check green"></i>
+                <p class= "b-l">Accepted</p>
+              </div>
+              <p class="b-l">$7,200</p>
+              <p class="b-l">$6,200</p>
+            </div>
+            <div class="creditor">
+              <div class="head">
+                <p class="b-xl grey">Status</p>
+                <p class="b-xl grey">Original Balance</p>
+                <p class="b-xl grey">Current Balance</p>
+              </div>
+              <p class="b-xl name">Creditor Name</p>
+              <div class="inlineF alignC currentStatus">
+                <i class="fa-solid fa-square-check pink"></i>
+                <p class="b-l">Under Review</p>
+              </div>
+              <p class="b-l">$5,100</p>
+              <p class="b-l">$4,100</p>
+            </div>
+            <div class="creditor">
+              <div class="head">
+                <p class="b-xl grey">Status</p>
+                <p class="b-xl grey">Original Balance</p>
+                <p class="b-xl grey">Current Balance</p>
+              </div>
+              <p class="b-xl name">Creditor Name</p>
+              <div class="inlineF alignC currentStatus">
+                <i class="fa-solid fa-list-check"></i>
+                <p class= "b-l">In Negotiation</p>
+              </div>
+              <p class="b-l">$8,100</p>
+              <p class="b-l">$8,100</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
